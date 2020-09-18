@@ -112,7 +112,6 @@ func = {
             });
         });
     },
-    
     render2048Game: async function () {
         await this._loadScript('js/2048.js');
     },
@@ -258,7 +257,7 @@ func = {
         });
     },
     _shoowBox: function () {
-        DotNet.invokeMethodAsync('Meowv.Blog.BlazorApp', 'showbox');
+        DotNet.invokeMethodAsync('Aohost.Blog.BlazorApp', 'showbox');
     },
     _loadScript: async function (url) {
         let response = await fetch(url);
